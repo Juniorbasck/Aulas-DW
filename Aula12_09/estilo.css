@@ -1,0 +1,55 @@
+.div1{
+	border: solid 5px red;
+	background: lightblue;
+}
+
+.div2{
+	border: solid 5px blue;
+	background: lightcoral;
+}
+
+#fundo{
+	background: lightgray;
+}
+
+
+.azul{
+	color: blue;
+}
+
+.vermelho{
+	color: red;
+	text: bold;
+}
+
+
+.verdeClaro{
+	
+	background: lightgreen;
+}
+
+.verde{
+
+	background: green;
+}
+.verdeEscuro{
+
+	background: darkgreen;
+}
+
+.vermelho1{
+	background: red;
+}
+
+.vermelho2{
+	background:#FA8072;
+}
+.vermelho3{
+	background: darkred ;
+}
+
+
+
+
+
+
