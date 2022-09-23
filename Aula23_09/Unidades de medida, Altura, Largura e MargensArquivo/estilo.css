@@ -1,0 +1,18 @@
+body{
+	background: #89CFF0;
+}
+
+.borda{
+	background: white;
+	border: 1vw solid black;
+	width: 65%;
+	font-size: 2vw;
+
+}
+
+.borda1{
+	background: white;
+	border: 8px solid black;
+	font-size: 20px;
+	width: 1000px;
+}

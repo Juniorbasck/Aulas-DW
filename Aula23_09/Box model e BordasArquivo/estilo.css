@@ -1,0 +1,45 @@
+.borda1{
+	border: 10px dotted green;
+
+}
+
+.borda2{
+	border: 10px double gray;
+	padding: 2px;
+
+}
+
+.borda3{
+	border: 7px dashed red;
+	padding: 2px;
+
+}
+
+.borda4{
+	border: 7px solid blue;
+	padding: 2px;
+}
+
+
+.praticando2{
+
+	border-left-style: solid;
+	border-left-color: red;
+	border-width: 9px;
+
+}
+
+.praticando3{
+	border: 10px dotted purple;
+
+}
+
+img{
+	width: 340px;
+	border: 15px double purple;
+
+}
+
+.fonte1{
+	font-family: "Lucida Console", "Courier New", monospace;
+}
