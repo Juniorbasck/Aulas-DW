@@ -16,3 +16,57 @@ body{
 	font-size: 20px;
 	width: 1000px;
 }
+
+.caixa{	
+
+			background: blue;
+			font-size: 35px;
+			padding: 20px;
+			width: 45%;	
+			margin-left: 49%;
+			border: 8px solid; 
+			border-color: black;
+			border-radius: 15px 15px 15px 15px;
+			color: white;
+} 
+
+.dentro1{
+	padding: 20px;
+	text-align: left;
+}
+
+.dentro2{
+	padding: 20px;
+	text-align: right;
+}
+
+
+
+.caixa1{	
+			text-align: left;
+			background: red;
+			font-size: 35px;
+			padding: 30px;
+			width: 45%;	
+			margin-left: 10%;
+			border: 8px solid; 
+			border-color: black;
+			border-radius: 15px 15px 15px 15px;
+			color: white;
+} 
+
+.borda3{
+	border: solid yellow;
+	border-left-width: 15px;
+	border-right-width: 15px;
+	background: hotpink;
+}
+
+.borda4{
+	border: solid yellow;
+	border-left-width: 15px;
+	border-right-width: 15px;
+	background: lightgreen;
+	color: red;
+
+}
