@@ -1,0 +1,67 @@
+body{
+	background: grey;
+}
+
+#cabecalho{
+	border: 1px solid black;
+	background: lawngreen;
+	height: 120px;
+}  
+
+#menu{
+	
+	height: 40px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+.espacamento{
+	padding: 130px;
+	font-size: 25px;
+}
+
+.corpoSite{
+	border: 2px solid black;
+ 	float: left;
+ 	background: white;
+ 	height: 400px;
+ 	width: 78%;
+ 
+ }
+
+.box-lateral{
+	border: 2px solid black;
+	background: white;
+	width: 400px;
+	height: 400px;
+	float: right;
+
+
+}
+
+.card{
+	width: 60px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 30px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.rodape{
+	background: darkgreen;
+	height: 407px;
+}
+
+.rodape2{
+	background: lightgreen;
+	height: 150px;
+
+}
+
+.rodape3{
+	background: white;
+	height: 500px;
+
+}
