@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Praticando 1</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<script>
+			 
+			 function 
+
+		</script>
+	</head>
+	<body>
+
+		<h1>Praticando 1 - JavaScript parte III</h1>
+
+		<h3>lâmpada</h3>
+
+	 <main>
+        <figcaption>
+            <figure>
+                <img id="lampada" src="imagens/lampada.png" alt="Lâmpada">
+            </figure>
+        </figcaption>
+    </main>
+
+   <script>
+   	
+		let [body] = document.getElementsByTagName("body")
+		let lampada = document.getElementById("lampada")
+	 
+		lampada.onmouseover = () => {
+			  body.style.color = "black"
+			  body.style.backgroundColor = "white"
+			  lampada.src = "imagens/lampada-acesa.png"
+		}
+
+		lampada.onmouseleave = () => {
+		    body.style.color = "white"
+		    body.style.backgroundColor = "black"
+		    lampada.src = "imagens/lampada.png"
+		} 
+
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Praticando 3</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<script>
+			//onclick, onmouseover, onmouseout 
+
+			let corAtual = 'white';
+
+			function definirCor(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = corAtual
+			}
+
+			function vermelho(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'red'
+			    onclick=function () {
+			        corAtual = "red"
+			    }
+			 }
+
+			 function verde(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'green'
+			    onclick=function () {
+			        corAtual = "green"
+			    }
+			 }
+
+			 function azul(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'blue'
+			    onclick=function () {
+			        corAtual = "blue"
+			    }
+			 }
+
+			 function amarelo(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'yellow'
+			    onclick=function () {
+			        corAtual = "yellow"
+			    }
+			 }
+
+			 function rosa(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'hotpink'
+			    onclick=function () {
+			        corAtual = "hotpink"
+			    }
+			 }
+
+			 function resetar(){
+			    let corpo = document.getElementById("corpo")
+			    corpo.style.backgroundColor = 'white'
+
+			    onclick=function() {
+			        corAtual='white'
+			    }
+			}
+
+		</script>
+	</head>
+	<body id="corpo">
+
+		<h1>Praticando 3 - JavaScript- cores (click e mouse)</h1><br><br><br>
+
+		<button class="caixa1" id="btn1" onclick="vermelho()" onmouseover="vermelho()" onmouseout="definirCor()"></button>
+		<button class="caixa2" id="btn1" onclick="verde()" onmouseover="verde()" onmouseout="definirCor()"></button>
+		<button class="caixa3" id="btn1" onclick="azul()" onmouseover="azul()" onmouseout="definirCor()"></button>
+		<button class="caixa4" id="btn1" onclick="amarelo()" onmouseover="amarelo()" onmouseout="definirCor()"></button>
+		<button class="caixa5" id="btn1" onclick="rosa()" onmouseover="rosa()" onmouseout="definirCor()"></button><br><br>
+
+		<button onclick="resetar()">Reset</button>
+		
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

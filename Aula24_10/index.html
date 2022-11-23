@@ -11,7 +11,11 @@
 
 		function porTexto(){
 			//document.getElementById('addText').innerHTM = 'AWDWDWDDWDDWADWDAWDAWDWAD'
-			let tml = document.getElementById("addText").innerText ='AAAAAAAAAAAAAAAAAAAAAAAA'
+			let tml = document.getElementById("addText").innerHTML +='AAAAAAAAAAAAAAAAAAAAAAAA<br><br>'
+		}
+
+		function removerTexto(){
+			let tml = document.getElementById("addText").innerHTML = null;
 		}
 
 		</script>
@@ -20,19 +24,12 @@
 	</head>
 	<body>
 
-		<h1>Praticando 1 - JavaScript</h1>
+		<h1>Praticando 1 - JavaScript</h1>	
 
 		<button id="btn1" onclick="porTexto()">Adicionar texto (parágrafo Loren Ipsum)</button><br><br>
 		<button id="btn2" onclick="removerTexto()">Remover texto (todos os parágrafos)</button><br><br>
 
 		<p id="addText"></p>
-	
-	
-	
-
-
-		
-
 	
 	</body>
 </html>
