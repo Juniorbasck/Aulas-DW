@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Trabalho</title>
+
+			<link rel="stylesheet" type="text/css" href="">
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+		</head>	
+		<body>
+
+			<div class="container">
+				<header class="pb-3 mb-4 border-bottom">
+				 	<h1>JavaScript - Aula 15 - Ajax e JSON - Junior</h1>
+				</header>
+
+				<div class="p-5 mb-4 bg-light rounded">
+					<div class="row">
+						<div class="col-4">
+							<div class="row mb-2">
+								<label for="nome" class="col-sm-3 col-form-label">Nome:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="nome">
+								</div>
+							</div>		
+							<div class="row mb-2">
+								<label for="email" class="col-sm-3 col-form-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="email">
+								</div>
+							</div>	
+							<div class="row my-3">
+								<div class="col-sm-12 text-center">
+									<input id="btnSubmit" type="button" class="btn my-3 btn-primary" value="Gravar">
+									<input type="btnReset" type="button" class="btn my-3 btn-primary" value="Limpar">
+								</div>
+							</div>	
+							<div id="divAlerts" class="row my-3">	
+							</div>
+							<div class="row my-3">
+								<div class="col-sm-12 text-center">
+									<br>
+									<input id="btnRefresh" type="button" class="btn btn-info" value="Atualizar dados tabela">
+								</div>
+								 <div id="container-sucesso"
+					                class="row p-5 bg-success d-flex justify-content-center rounded text-light mt-3">
+					                <p class="m-0">Dados gravados com sucesso</p>
+					            </div>
+							</div>
+						</div>
+						<div class="col-8">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr class="table-red">
+										<th scope="col" style="width: 40%;">Nome</th>
+										<th scope="col" style="width: 30%;">Email</th>
+										<th scope="col" class="text-center" style="width: 10%"></th>
+									</tr>
+								</thead>
+								<tbody class="table-group-divider">								
+								</tbody>
+							</table>
+						</div>
+					</div>		
+				</div>
+			</div>
+
+			
+			<script src="jquery-3.6.1.min.js"></script>
+			<script src="ajax.js"></script>
+			<script>
+
+					$("#container-sucesso").attr("style", "display: none !important");
+						const apagar = (id) => {
+						    const dataToSend = { id };
+						    $.post("https://epansani.com.br/2022/dw1s4/ajax/rem.php", dataToSend, (res) => {
+						        if (res == "true") {
+						            $(`#tb-${id}`).remove();
+						        }
+						    });
+						}
+
+						$("#btnSubmit").click((e) => {
+						    e.preventDefault();
+						    const dataToSend = {
+						        nome: $("#nome").val(),
+						        email: $("#email").val()
+						    };
+						    $.post("https://epansani.com.br/2022/dw1s4/ajax/ins.php", dataToSend, (res) => {
+						        if (res == "true") {
+						            $("#container-sucesso").attr("style", "display: flex !important");
+						        }
+						    });
+						});
+
+						$("#btnRefresh").click(() => {
+						    $.get("https://epansani.com.br/2022/dw1s4/ajax/list.php", (res) => {
+						        res = JSON.parse(res);
+						        $("tbody").empty();
+						        for (const data of res) {
+						            $("tbody").append(`
+						            <tr id=tb-${data.id}>
+						                <td>${data.nome}</td>
+						                <td>${data.email}</td>
+						                <td class="col-1">
+						                    <button class="btn bg-danger text-white apagar" id=${data.id} onclick="apagar(event.target.id)">Apagar</button>
+						                </td>
+						            </tr>
+						            `);
+						        }
+						    });
+						});
+
+						$("#btnReset").click(() => {
+						    $("#container-sucesso").attr("style", "display: none !important");
+						});
+
+			</script>
+		</body>
+</html>
