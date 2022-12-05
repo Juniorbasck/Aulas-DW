@@ -11,8 +11,8 @@ const helloVue = {
 
         <p style="font-size: 3em;">{{meuTexto}}</p>
 
-        <div v-show="meuTexto=='bmo'">
-            <img width="120" src="bmo.jpg" alt="bmo">
+        <div v-show="meuTexto=='junior'">
+            <img width="120" src="bmo.jpg" alt="junior">
         </div>
 
         <div>

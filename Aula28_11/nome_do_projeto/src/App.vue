@@ -2,22 +2,20 @@
     <div>
         <img alt="Vue logo" src="./assets/logo.png">
         <ContadorClicks/>
-
-        <ImagemVue src="assets/download.jpg" caption="tigre" />
-       
+        <galeriasImagens/>
     </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue';
 import ContadorClicks from './components/ContadorCliks.vue';
-import ImagemVue from './components/ImagemVue.vue';
+import galeriasImagens from './components/galeriasImagens.vue';
 
 export default {
   name: 'App',
   components: {
     ContadorClicks,
-    ImagemVue,
+    galeriasImagens,
   },
 };
 </script>

@@ -18,7 +18,14 @@ export default{
     methods: {
         soma() {
             this.contador++;
+
+            localStorage.setItem('contador', this.contador)
         },
+    },
+    created(){
+        if (localStorage.getItem('contador')){
+            this.contador = localStorage.getItem('contador');
+        }
     },
 };
 </script>
