@@ -1,0 +1,67 @@
+*{
+	list-style: none;
+}
+nav{
+	background: orange;
+	padding: 10px;
+	text-decoration: none;
+}
+
+ul li a{
+	text-decoration: none;
+	list-style: none;
+}
+
+.itens{
+	display: flex;
+	justify-content: flex-end;
+}
+
+a{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+a:hover{	
+	background: #fff;
+	color: brack;
+}
+
+.corpo{
+	padding: 120px;
+	text-align: center;
+}
+
+h1{	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h3{
+	font: 16px Arial, helvetica, sans-serif;
+}
+
+.corpo2{
+	width: 100%;
+	height: 700px;
+	background: url(imagens/imagens.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.conteudo{
+	padding: 200px;
+}
+
+.conteudo h1{
+	color: orange;
+	font-size: 3em;
+}
+
+input{
+	width: 200px;
+	height: 30px;
+}
+
+button{
+	height: 35px;
+}
