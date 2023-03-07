@@ -41,18 +41,17 @@
     </div>
 
     <div class="caixas">
-          <a class="azul" href="destinoGET.php?paginaTitulo=ADILON&corpo=TEeeetstets.com&corFundo=blue">
+          <a cla href="destinoGET.php?paginaTitulo=ADILON&corpo=TEeeetstets.com&corFundo=blue">
             <img src="https://th.bing.com/th/id/OIP.zuPTlxjq8A0hSo_4KUVq-AHaFj?w=201&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"><br>
           </a>
     </div>
 
     <style>
       .azul{
-        margin-top: 0px;
+        border: 1px solid black;
       }
       .vermelha{
-        border: 1px solid black;
-        margin-left: 250px;
+        border: 1px solid black
       }
       .caixas{
         display: inline-block;
