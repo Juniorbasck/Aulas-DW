@@ -21,16 +21,12 @@
         .fundo{
             border: 1px solid black;
         }
-        
-      
         </style> 
-
-
 	</head>
   <body>
           
 
-        <h1>Contador</h1>
+        <h1>Praticando 4 - Gerador de tabela</h1>
         <hr/>
 
        <form class=" form" action="destino.php" method="POST">
@@ -40,21 +36,29 @@
                
                 <div class="col-md-3" style="margin-left: 90px;">
                     <label>Linhas:</label>
-                    <input class="form-control" type="number">
+                    <input class="form-control" type="number" id="num1" name="num1">
                 </div>
 
                 <div class="col-md-3">
-                    <label>Linhas:</label>
-                    <input class="form-control" type="number">
+                    <label>Calunas:</label>
+                    <input class="form-control" type="number" id="num2" name="num2">
                 </div>
 
-                <div class="col-md-3">
-                    <label>Linhas:</label>
-                    <input class="form-control" type="number">
-                </div>
+                <select name="estilo" class="col-md-3 form-control mt-5">
+
+                    <option></option>
+
+                    <option value="table-primary">table-primary</option>
+                    <option value="table-success">table-success</option>
+                    <option value="table-danger">table-danger</option>
+                    <option value="table-warning">table-warning</option>
+                    <option value="table-dark">table-dark</option>
+
+                </select>
+
             </div>
         
-            <div class="row justify-content-center fundo">
+            <div class="row justify-content-center">
 
                 <div>
 
