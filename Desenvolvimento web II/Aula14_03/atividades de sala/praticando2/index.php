@@ -11,6 +11,7 @@
     
          .container input{
                 width: 200px;
+                
             }
         
         </style> 
