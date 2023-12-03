@@ -1,7 +1,5 @@
 
-using ApiA.Servicves;
-
-namespace ApiA
+namespace ApiB
 {
     public class Program
     {
@@ -15,7 +13,8 @@ namespace ApiA
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<VectorService>();
+
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 
